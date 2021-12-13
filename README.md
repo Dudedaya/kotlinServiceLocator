@@ -1,5 +1,6 @@
 # Kotlin Service Locator
 Idiomatic way to implement Service Locator pattern in Kotlin
+
 Inspired by kotlinx.coroutines
 
 ## Usage:
