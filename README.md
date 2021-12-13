@@ -1,2 +1,2 @@
 # kotlinServiceLocator
-Idiomatic way to implement Service Locator pattern in Kotlin
+Idiomatic way to implement service.Service Locator pattern in Kotlin

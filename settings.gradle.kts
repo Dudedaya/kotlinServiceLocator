@@ -1,1 +1,1 @@
-rootProject.name = "Kotlin Service Locator"
+rootProject.name = "Kotlin service.Service Locator"
