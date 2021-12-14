@@ -34,8 +34,6 @@ ServiceLocator.getOrNull(BazService)?.baz() ?: println("BazService is null")
 #### output:
 
 ```
-foo  
-bar  
 BazService is not loaded  
 BazService is null
 ```
