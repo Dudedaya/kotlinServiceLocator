@@ -8,7 +8,7 @@ Inspired by kotlinx.coroutines
 
 ### Loaded services:
 
-```
+```kotlin
 ServiceLocator[FooService].foo()  
 ServiceLocator[BarService].bar()  
 ```
@@ -22,7 +22,7 @@ bar
 
 ### Not loaded service:
 
-```
+```kotlin
 try {  
     ServiceLocator[BazService].baz()  
 } catch (ex: Exception) {  
@@ -44,7 +44,7 @@ BazService is null
 
 #### ServiceLocator
 
-```
+```kotlin
 interface ServiceLocator {
     operator fun <T : Service> get(key: Service.Key<T>): T
     fun <T : Service> getOrNull(key: Service.Key<T>): T?
@@ -69,7 +69,7 @@ interface ServiceLocator {
 
 #### ServiceLocatorImpl
 
-```
+```kotlin
 @Suppress("UNCHECKED_CAST")
 class ServiceLocatorImpl : ServiceLocator {
     /**
@@ -90,7 +90,7 @@ class ServiceLocatorImpl : ServiceLocator {
 
 #### Service
 
-```
+```kotlin
 interface Service {
     interface Key<T : Service>
 
@@ -100,7 +100,7 @@ interface Service {
 
 #### FooService
 
-```
+```kotlin
 interface FooService : Service {
     companion object : Service.Key<FooService>
 
@@ -113,7 +113,7 @@ interface FooService : Service {
 
 #### FooServiceImpl
 
-```
+```kotlin
 class FooServiceImpl : FooService {
     override fun foo() {
         println("foo")
